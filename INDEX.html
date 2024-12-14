@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv=""X-UA-Compatible" content="=IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="file:///C:/Users/Pradeep%20kishore/Desktop/picture/Logo1.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Data Analyst</p>
+                <h1>Hi, I'm <span>Pradeep Kishore</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">  
+                    <img src="./assets/Me1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Pradeep Kishore, an aspiring professional in data analytics and IT, currently in the final year of my BCA program at Guru Nanak College, Velachery (CGPA: 8.7). I am passionate about leveraging technology and data to solve problems, optimize processes, and drive impactful decisions. Skilled in Python, SQL, Power BI, and Excel, I’ve worked on projects like HR Data Analytics and contributed to research on AI Employment Trends. With internships in business and data analytics and 1.5 years of customer service experience, I bring a blend of technical expertise, problem-solving abilities, and a strong work ethic. I am eager to explore opportunities in both data analytics and IT-related roles, where I can continue to learn, grow, and make a meaningful impact.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Excel</span><br>Report creation & automation</li>
+                        <li><span>Python</span><br>Basic knowledge</li>
+                        <li><span>SQL</span><br>Querying & database management</li>
+                        <li><span>Power BI</span><br>Data visualization & reporting</li>
+                        <li><span>Data Cleaning</span><br>Data accuracy & transformation</li>
+                        <li><span>Team Collaboration</span><br>Working with teams to improve service</li>
+                        <li><span>Time Management</span><br>Managing multiple tasks efficiently</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Customer representative at SynergyRevo</span><br>Sep 2022 - Mar 2024<br>Part Time</li>
+                        <li><span>Archive data associate at MSSRF</span><br>May - June 2024<br>Full time Intern</li>
+                        <li><span>Data analyst at KultureHire</span><br>Oct - Nov 2024<br>Online Intern</li>
+                        <li><span>Business analyst at KultureHire</span><br>Sep - Nov 2024<br>Online Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Computer Application</span><br>
+                            Guru Nanak College, Velachery<br>
+                            Current CGPA: 8.7<br>
+                            Final Year – Expected Completion : 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- --------------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./assets/Pro1 - img.jpg">
+                <div class="layer">
+                    <h3>HR Data Analysis</h3>
+                    <p>A data-driven analysis of HR metrics focusing on attendance, work-from-home, and sick leave patterns, visualized through interactive dashboards to provide actionable insights for improved workforce management.</p>
+                    <a href="https://github.com/Pradeep-kishore/HR_Data_Analysis---P1" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                      </a>                      
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/Gen Z - img.jpg">
+                <div class="layer">
+                    <h3>Gen Z Career Aspiration Analysis</h3>
+                    <p>Analyzed Gen Z career aspirations through interactive dashboards, providing insights into work preferences, education goals, and career influencers to guide strategic decision-making.</p>
+                    <a href="https://github.com/Pradeep-kishore/Gen-Z-Career-Aspiration-Analysis-P2" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/Project 3.jpg">
+                <div class="layer">
+                    <h2>Coming Soon</h2>
+                    
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>  
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@ex.com</p>
+                <p><i class="fa-solid fa-phone"></i> 933445555</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="file:///D:/Pradeep%20Kishore/Resume/PK_Final_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+    
+    
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6VH2W9RqqYF1PsY2RjfJhB-SNiO2eOSAKym8Ke61V87c0TwYaknEe0McwcLF0oDBbqA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+    </html>
